@@ -15,5 +15,10 @@ let package = Package(
 	targets: [
 		.target(
 			name: "ogg"),
+		.testTarget(
+			name: "COggTests",
+			dependencies: [
+				"ogg",
+			])
 	]
 )
